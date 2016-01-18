@@ -115,7 +115,9 @@ add_action( 'widgets_init', 'outdoor_journal_widgets_init' );
  */
 function outdoor_journal_scripts() {
 	wp_enqueue_style( 'outdoor-journal-style', get_stylesheet_uri() );
-	
+
+	wp_enqueue_style( 'outdoor-journal-main-styles', get_template_directory_uri() . '/css/main.css' );
+
 	wp_enqueue_script( 'outdoor-journal-gravity-forms', get_template_directory_uri() . '/js/gravityforms.js', array(), '20120206', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -131,7 +133,7 @@ require get_template_directory() . '/inc/template-tags.php';
 
 
 function url_get_contents ($url) {
-    if (function_exists('curl_exec')){ 
+    if (function_exists('curl_exec')){
         $conn = curl_init($url);
         curl_setopt($conn, CURLOPT_SSL_VERIFYPEER, true);
         curl_setopt($conn, CURLOPT_FRESH_CONNECT,  true);
@@ -147,7 +149,7 @@ function url_get_contents ($url) {
         $url_get_contents_data = false;
     }
 return $url_get_contents_data;
-} 
+}
 
 
 
