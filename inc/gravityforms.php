@@ -40,7 +40,7 @@ function add_gear( $form_id, $post_id, $form_settings ) {
 
 
 
-/* NOTE: Priority steps 2, 3, 4 are saved in the api-calls.php files */
+/****** NOTE: Priority steps 2, 3, 4 are saved in the api-calls.php files ******/
 
 
 
