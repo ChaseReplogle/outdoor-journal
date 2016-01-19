@@ -425,3 +425,16 @@ td,
 th {
   padding: 0;
 }
+
+
+
+
+
+
+/**
+ * Additional Base Styling
+ */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}

@@ -1,5 +1,5 @@
 
-// Creates a hide class that can be applied in the form editor.        
+// Creates a hide class that can be applied in the form editor.
 jQuery(document).ready(function($){
      $(".form-hide").hide();
 });
@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 	  	$('div.wpuf-fields').live("click", function () {
 	  	$('#wpuf-map-choose_location').removeClass('scrolloff'); // set the pointer events true on click
 	});
-    
+
     // you want to disable pointer events when the mouse leave the canvas area;
     $("div.wpuf-fields").mouseleave(function() {
        $('#wpuf-map-choose_location').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
